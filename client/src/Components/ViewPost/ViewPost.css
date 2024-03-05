@@ -1,0 +1,102 @@
+.main-width{
+    width: 85%;
+    /* background-color:#f5f7fb !important; */
+    border-radius: 5px;
+    margin: 5px;
+    overflow-y: auto;
+}
+.main-width::-webkit-scrollbar {
+    display: none;
+}
+.post-box{
+    position: relative;
+    top: 5%;
+    left: 25%;
+    width: 60%;
+    height: fit-content;
+    border-radius: 5px;
+}
+
+.image-box{
+    height: fit-content;
+    width: 600px;
+    object-fit: contain;
+    border-radius: 5px;
+
+}
+.post-caption{
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px;
+    color: black;
+}
+.post-description{
+    font-weight: 400;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: -10px;
+    color: black;
+    max-width: 600px;
+
+}
+.hr-width{
+    width: 90%;
+}
+.empty-div{
+    position: relative;
+    top: 40%;
+    left: 23%;
+    height: 100px;
+}
+.Empty-head{
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Courier New', Courier, monospace;
+}
+@media(max-width:500px){
+    .empty-div{
+        position: relative;
+        top: 40%;
+        left: 12%;
+        height: 100px;
+    }
+    .main-width{
+        width: 100%;
+        background-color:#f5f7fb !important;
+        border-radius: 5px;
+        margin: 5px;
+        overflow-y: auto;
+    }
+    .post-box{
+        position: relative;
+        top: 5%;
+        left: 20%;
+        width: 60%;
+        height: fit-content;
+        border-radius: 5px;
+    }
+    
+    .image-box{
+        height: fit-content;
+        width: 100%;
+        object-fit: contain;
+        border-radius: 5px;
+    
+    }
+    .post-caption{
+        font-weight: bold;
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: 5px;
+        font-size: small;
+
+        color: black;
+    }
+    .post-description{
+        font-weight: 400;
+        font-family: 'Courier New', Courier, monospace;
+        margin-top: -10px;
+        font-size: xx-small;
+        color: black;
+        max-width: 600px;
+    
+    }
+}

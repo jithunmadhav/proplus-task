@@ -1,0 +1,10 @@
+.Home-align{
+    display: flex;
+    height: 100vh;
+}
+.Home-align::-webkit-scrollbar {
+    display: none;
+}
+.Home-nav{
+    width: 100%;
+}

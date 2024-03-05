@@ -1,0 +1,13 @@
+.form-align{
+    position: absolute;
+    left: 50%;
+    top: 15%;
+}
+@media(max-width:500px){
+    .form-align{
+        position: absolute;
+        left: 0%;
+        top: 15%;
+        padding: 50px;
+    }
+}

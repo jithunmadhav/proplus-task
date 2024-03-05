@@ -1,0 +1,76 @@
+.outer-div{
+    padding-left: 25px;
+}
+.curr-num-circle{
+    width: 35px;
+    height: 35px;
+    background: #9C75EA;
+    border-radius: 66px;
+    text-align: center;color: white;
+}
+.curr-course-crt-p{
+    font-family: ui-monospace;
+    font-size: small;
+    font-weight: 600;
+    color: #9C75EA;
+    padding: 2px;
+}
+.num-circle{
+    width: 35px;
+    height: 35px;
+    border-radius: 66px;
+    border: .5px solid rgb(49 49 49 / 36%);;
+    text-align: center;
+    color: rgb(49 49 49 / 76%);
+}
+.course-crt-p{
+    font-family: ui-monospace;
+    font-size: small;
+    font-weight: 600;
+    color: black;
+    padding: 2px;
+}
+.course-info-div{
+    margin-top: 10px;
+    width: 50%;
+}
+.course-info-p{
+    font-weight: bold;
+}
+.course-info-input{
+    width: 100%;
+    background: #f5f7fb;
+    border: none;
+    height: 45px;
+    color: rgb(49 49 49 / 76%);
+}
+.course-info-select{
+    width: 100%;
+    background: #f5f7fb;
+    border: none;
+    color: rgb(49 49 49 / 76%);
+    height: 45px;
+}
+.course-info-textarea{
+    width: 100%;
+    background: #f5f7fb;
+    border: none;
+    height: 20vh;
+    color: rgb(49 49 49 / 76%);
+
+}
+.course-info-button{
+    background: #9C75EA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    height: 40px;
+    
+}
+.course-info-button-div{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
