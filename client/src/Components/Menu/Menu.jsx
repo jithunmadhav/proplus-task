@@ -11,7 +11,7 @@ function Menu({setopenCourse,setopenHome,setopenPost,setopenhamburger}) {
         <p className='logo-p'>LOGO</p>
       </div>
       <div className='menu-content' onClick={()=>{setopenHome(true); setopenCourse(false); setopenPost(false); setopenhamburger(false) }}>
-        <p className='menu-para'><TiHomeOutline /> HOME</p>
+        <p className='menu-para'><TiHomeOutline /> Home</p>
       </div>
       <div className='menu-content' onClick={()=>{setopenHome(false); setopenCourse(true); setopenPost(false); setopenhamburger(false) }}>
         <p className='menu-para'><MdMenuBook /> My Courses</p>

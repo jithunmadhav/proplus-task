@@ -21,21 +21,29 @@
     border-radius: 66px;
     border: .5px solid rgb(49 49 49 / 36%);;
     text-align: center;
-    color: rgb(49 49 49 / 76%);
+    color: rgb(49 49 49 / 56%);
 }
 .course-crt-p{
     font-family: ui-monospace;
     font-size: small;
     font-weight: 600;
-    color: black;
+    color: rgb(49 49 49 / 56%);
     padding: 2px;
 }
-.course-info-div{
+.course-info-div1{
     margin-top: 10px;
     width: 50%;
 }
+.course-info-div2{
+    margin-top: 10px;
+    width: 50%;
+    padding-left: 30px;
+}
 .course-info-p{
     font-weight: bold;
+}
+.course-info-outer-div{
+    display: flex;
 }
 .course-info-input{
     width: 100%;
@@ -73,4 +81,15 @@
     margin-top: 20px;
     display: flex;
     justify-content: flex-end;
+}
+.cover-upload{
+    border-style: dashed;
+    margin-top: 35px;
+    width: 75%;
+    height: 25vh;
+    color: rgb(150, 150, 150);
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
 }

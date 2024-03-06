@@ -6,19 +6,22 @@ import imageUrl from '../../imageUrl';
 import Backdrop from '@mui/material/Backdrop';
 import CircularProgress from '@mui/material/CircularProgress';
 import { IoIosArrowForward } from "react-icons/io";
+import { GrGallery } from "react-icons/gr";
+import { LiaFileVideo } from "react-icons/lia";
+import CourseDetails from '../CourseDetails/CourseDetails';
 
 
 function Course() {
   
   const [showBackdrop, setShowBackdrop] = useState(true);
   const [showCourse, setshowCourse] = useState(false);
+  const [openCourseDetails, setopenCourseDetails] = useState(false)
   useEffect(() => {
     setTimeout(() => {
       setShowBackdrop(false);
       setshowCourse(true);
     }, 400);
   }, []);
-
 
 
   return (
@@ -31,7 +34,7 @@ function Course() {
           <CircularProgress color="inherit" />
         </Backdrop>
       )}
-      {showCourse && (
+      {showCourse && !openCourseDetails  ? (
         <div className='outer-div'>
           <div style={{ display:'flex' }}>
           <div className='curr-num-circle'>1</div>&nbsp;
@@ -44,11 +47,12 @@ function Course() {
           <p className='course-crt-p'>Publish </p>         
           </div>
 
-          <div className='course-info-div'>
+          <div className='course-info-outer-div' >
+
+            <div className='course-info-div1'>
             <p className='course-info-p'>Course Information</p>
             <p>Title</p>
             <input className='course-info-input' type="text" />
-
             <div style={{ display:'flex' }}>
             <div style={{ width:"50%" }}>
               <p>Category</p>
@@ -64,18 +68,29 @@ function Course() {
               </select>             
                </div>
             </div>
-
             <p>Description</p>
             <textarea className='course-info-textarea' name="" id="" cols="30" rows="10"></textarea>
             <p>Frequently Asked Questions</p>
             <input className='course-info-input' type="text" />
             <div className='course-info-button-div'>
-            <button className='course-info-button'>Save & Coninue</button>
+            <button onClick={()=>setopenCourseDetails(!openCourseDetails)} className='course-info-button'>Save & Coninue</button>
+            </div>
             </div>
 
+            <div className='course-info-div2'>
+              <p className='course-info-p'>Cover Image</p>
+              <div className='cover-upload'>
+                <p><GrGallery />Upload</p>
+              </div><br/>
+              <p className='course-info-p'>Sales Video</p>
+              <div className='cover-upload'>
+                <p><LiaFileVideo />Upload</p>
+              </div>
+            </div>
           </div>
         </div>
-    )}
+    ) : <CourseDetails/>
+  }
     </>
   );
 }
